@@ -1,0 +1,7 @@
+/.vscode
+/node-moules
+./dist
+
+*.env
+.env
+.env.*
