@@ -17,9 +17,9 @@ connectDB()
         throw error
     })
 
-    app.listen(port, () =>{
-        console.log(`Server is running at port: ${port}`);
-    })
+    // app.listen(port, () =>{
+    //     console.log(`Server is running at port: ${port}`);
+    // })
 })
 .catch((err) => {
     console.log("Mongo Db Connection Failed !!! ");
