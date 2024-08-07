@@ -33,7 +33,7 @@ import { test } from "./controllers/user.controller.js"
 app.use("/api/v1/users", userRouter)
 
 
-app.use("/", test)
+app.use("/.netlify/functions/api", test)
 
 
 export {app}
