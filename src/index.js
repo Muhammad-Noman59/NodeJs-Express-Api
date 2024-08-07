@@ -27,7 +27,7 @@ connectDB()
     console.log("Mongo Db Connection Failed !!! ");
 })
 
-
+export default app
 
 
 
