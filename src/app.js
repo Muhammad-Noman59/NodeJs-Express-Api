@@ -19,6 +19,19 @@ app.use(express.urlencoded({
     limit : "16kb"
 }))
 
+
+app.get("/", (req, res) =>
+    res.json({
+      message: "/",
+      request: req.url,
+      status: "Running smoothly :rocket:",
+      timestamp: new Date().toLocaleString(),
+      uptime: `${Math.floor(process.uptime() / 60)} minutes ${Math.floor(
+        process.uptime() % 60
+      )} seconds`,
+    })
+  );
+
 app.use(express.static("public"))
 
 app.use(cookieParser())
