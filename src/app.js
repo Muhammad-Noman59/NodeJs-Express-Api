@@ -36,4 +36,4 @@ app.use("/api/v1/users", userRouter)
 app.use("/.netlify/functions/api", test)
 
 
-export {app}
+export default app
