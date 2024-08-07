@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "start": "node src/prod.js",
-    "build": "src/index.js"
+    "build": "netlify-lambda build netlify.js"
   },
   "keywords": [
     "javascript",
