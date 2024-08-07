@@ -493,6 +493,12 @@ const getWatchHistory = asyncHandler(async(req, res)=>{
         )
 })
 
+
+const test = asyncHandler(async(req, res)=>{
+
+    return res.send("Testing")
+})
+
 export {
     registerUser,
     loginUser,
@@ -504,6 +510,7 @@ export {
     updateUserAvatar,
     updateUserCoverImage,
     getUserChannelProfile,
-    getWatchHistory
+    getWatchHistory,
+    test
 
 }
